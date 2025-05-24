@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aan - منصة البث المباشر الثقافية والأدبية السعودية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#000000", secondary: "#001933", accent: "#FF1919" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+<script>
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        const splash = document.getElementById("splash");
+        splash.style.opacity = "0";
+        splash.style.transition = "opacity 0.5s ease";
+        setTimeout(() => splash.remove(), 500);
+      }, 1600); // وقت أطول شوية عشان يكمل الأنيميشن
+    });
+  </script>
+  
+  
+  
+  </script>
+  
+      
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Tajawal', sans-serif;
+      direction: rtl;
+      }
+      .app-screenshot {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .feature-card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+      }
+      .audience-card:hover {
+      transform: scale(1.02);
+      transition: all 0.3s ease;
+      }
+      .btn-hover:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(255, 25, 25, 0.2), 0 4px 6px -2px rgba(255, 25, 25, 0.1);
+      }
+      .custom-input:focus {
+      border-color: #001933;
+      box-shadow: 0 0 0 3px rgba(0, 25, 51, 0.2);
+      @keyframes splashPop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes splashBounce {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-splash-bounce {
+  animation: splashBounce 1.4s ease-out forwards;
+}
+
+
+}
+
+      
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="bg-primary sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+      <div>
+        <img src="assets/images/logo-aan.png.jpeg" alt="شعار آن" class="h-32 md:h-36 w-auto" />
+    </div>
+              <nav class="hidden md:flex    space-x-8 space-x-reverse">
+          <a
+            href="#features"
+            class="text-white hover:text-accent transition-colors lang-ar"
+            >الميزات</a
+          >
+          <a
+            href="#features"
+            class="text-white hover:text-accent transition-colors lang-en hidden"
+            >Features</a
+          >
+          <a
+            href="#benefits"
+            class="text-white hover:text-accent transition-colors lang-ar"
+            >الفوائد</a
+          >
+          <a
+            href="#benefits"
+            class="text-white hover:text-accent transition-colors lang-en hidden"
+            >Benefits</a
+          >
+          <a
+            href="#audience"
+            class="text-white hover:text-accent transition-colors lang-ar"
+            >الجمهور المستهدف</a
+          >
+          <a
+            href="#audience"
+            class="text-white hover:text-accent transition-colors lang-en hidden"
+            >Target Audience</a
+          >
+          <a
+            href="#revenue"
+            class="text-white hover:text-accent transition-colors lang-ar"
+            >نموذج الإيرادات</a
+          >
+          <a
+            href="#revenue"
+            class="text-white hover:text-accent transition-colors lang-en hidden"
+            >Revenue Model</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <!-- <button
+            id="lang-switch"
+            class="flex items-center bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-button text-white text-sm"
+          >
+            <i class="ri-global-line mr-2"></i>
+            <span class="lang-ar">English</span>
+            <span class="lang-en hidden">العربية</span>
+          </button> -->
+          <div class="md:hidden w-8 h-8 flex items-center justify-center">
+            <i class="ri-menu-line text-white ri-xl"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="relative overflow-hidden min-h-[90vh]"
+      style="background-image: url('https://readdy.ai/api/search-image?query=elegant%2520black%2520background%2520with%2520subtle%2520red%2520and%2520navy%2520blue%2520geometric%2520patterns%2520inspired%2520by%2520Arabic%2520design%252C%2520modern%2520minimal%2520aesthetic%252C%2520high%2520contrast%252C%2520professional%2520look%252C%2520suitable%2520for%2520a%2520Saudi%2520cultural%2520app%2520background%252C%2520with%2520smooth%2520gradient%2520on%2520left%2520side%2520for%2520text%2520placement&width=1920&height=1080&seq=hero1&orientation=landscape'); background-size: cover; background-position: center;"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-l from-transparent via-primary/70 to-primary"
+      ></div>
+      <div class="container mx-auto px-4 py-28 md:py-40 relative z-10">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 text-white mb-12 md:mb-0">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              <span class="lang-ar"
+                >آن - منصة البث المباشر الثقافية والأدبية السعودية</span
+              >
+              <span class="lang-en hidden"
+                >Aan – The Saudi Platform for Cultural & Literary Live
+                Streaming</span
+              >
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+              <span class="lang-ar"
+                >اكتشف وشارك في الأحداث الثقافية والأدبية السعودية من أي مكان.
+                استمتع بالبث المباشر للندوات والمحاضرات والفعاليات
+                الثقافية.</span
+              >
+              <span class="lang-en hidden"
+                >Discover and engage in Saudi cultural and literary events from
+                anywhere. Enjoy live streaming of seminars, lectures, and
+                cultural activities.</span
+              >
+            </p>
+            <div class="flex flex-wrap gap-6">
+              <button
+                class="flex items-center bg-white text-primary px-8 py-4 rounded-button font-medium btn-hover transition-all whitespace-nowrap text-lg"
+              >
+                <div
+                  class="w-8 h-8 flex items-center justify-center ml-3 lang-ar"
+                >
+                  <i class="ri-apple-fill ri-xl"></i>
+                </div>
+                <div
+                  class="w-8 h-8 flex items-center justify-center mr-3 lang-en hidden"
+                >
+                  <i class="ri-apple-fill ri-xl"></i>
+                </div>
+                <span class="lang-ar">تحميل من App Store</span>
+                <span class="lang-en hidden">Download on the App Store</span>
+              </button>
+              <button
+                class="flex items-center bg-accent text-white px-8 py-4 rounded-button font-medium btn-hover transition-all whitespace-nowrap text-lg"
+              >
+                <div
+                  class="w-8 h-8 flex items-center justify-center ml-3 lang-ar"
+                >
+                  <i class="ri-google-play-fill ri-xl"></i>
+                </div>
+                <div
+                  class="w-8 h-8 flex items-center justify-center mr-3 lang-en hidden"
+                >
+                  <i class="ri-google-play-fill ri-xl"></i>
+                </div>
+                <span class="lang-ar">تحميل من Google Play</span>
+                <span class="lang-en hidden">Get it on Google Play</span>
+              </button>
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <div class="relative w-64 md:w-80">
+              <div
+                class="absolute -top-4 -right-4 w-full h-full bg-secondary rounded-3xl transform rotate-6"
+              ></div>
+              <img
+                src="https://readdy.ai/api/search-image?query=smartphone%2520mockup%2520showing%2520an%2520elegant%2520dark%2520UI%2520of%2520a%2520streaming%2520app%2520with%2520English%2520text%252C%2520featuring%2520red%2520and%2520navy%2520blue%2520accents%252C%2520showing%2520a%2520cultural%2520event%2520stream%2520interface%2520with%2520English%2520labels%2520and%2520buttons%252C%2520high%2520quality%2520render%252C%2520professional%2520product%2520photography&width=600&height=1200&seq=app1&orientation=portrait"
+                alt="تطبيق آن"
+                class="relative z-10 rounded-2xl border-4 border-white shadow-xl app-screenshot object-cover object-top w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            ميزات المنصة
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            اكتشف الميزات المتميزة التي تجعل منصة "آن" الخيار الأمثل للمحتوى
+            الثقافي والأدبي السعودي
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Feature 1 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow feature-card"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-accent/10 rounded-full mb-6 mx-auto"
+            >
+              <i class="ri-live-line text-accent ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3 text-center">
+              البث المباشر
+            </h3>
+            <p class="text-gray-600 text-center">
+              استمتع بمشاهدة الفعاليات الثقافية والأدبية بث مباشر عالي الجودة من
+              أي مكان وفي أي وقت.
+            </p>
+          </div>
+          <!-- Feature 2 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow feature-card"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-accent/10 rounded-full mb-6 mx-auto"
+            >
+              <i class="ri-book-open-line text-accent ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3 text-center">
+              المكتبات الرقمية
+            </h3>
+            <p class="text-gray-600 text-center">
+              الوصول إلى مجموعة واسعة من الكتب والمقالات والمحتوى الثقافي
+              السعودي الرقمي بسهولة.
+            </p>
+          </div>
+          <!-- Feature 3 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow feature-card"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-accent/10 rounded-full mb-6 mx-auto"
+            >
+              <i class="ri-search-line text-accent ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3 text-center">
+              البحث الذكي
+            </h3>
+            <p class="text-gray-600 text-center">
+              ابحث بسهولة عن المحتوى الذي تريده باستخدام خاصية البحث المتقدمة
+              المدعومة بالذكاء الاصطناعي.
+            </p>
+          </div>
+          <!-- Feature 4 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow feature-card"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-accent/10 rounded-full mb-6 mx-auto"
+            >
+              <i class="ri-bookmark-line text-accent ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3 text-center">
+              المقاطع المفضلة
+            </h3>
+            <p class="text-gray-600 text-center">
+              احفظ لحظاتك المفضلة من البث المباشر وشاركها مع أصدقائك أو احتفظ
+              بها للرجوع إليها لاحقًا.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <img aaaan.jpg
+              src="assets/images/aaaan.jpg"
+              alt="الحفاظ على التراث الثقافي السعودي"
+              class="rounded-lg shadow-xl object-cover object-top w-full h-auto"
+            />
+          </div>
+          <div class="md:w-1/2 md:pr-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+              الحفاظ على التراث الثقافي السعودي
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              تهدف منصة "آن" إلى المساهمة في الحفاظ على التراث الثقافي والأدبي
+              السعودي من خلال توثيق ونشر المحتوى الثقافي بطريقة رقمية حديثة.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div
+                  class="w-8 h-8 flex items-center justify-center bg-accent/10 rounded-full mt-1 ml-3"
+                >
+                  <i class="ri-check-line text-accent"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-secondary">
+                    توثيق الفعاليات الثقافية
+                  </h4>
+                  <p class="text-gray-600">
+                    توثيق وأرشفة الفعاليات الثقافية والأدبية للرجوع إليها في
+                    المستقبل.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-8 h-8 flex items-center justify-center bg-accent/10 rounded-full mt-1 ml-3"
+                >
+                  <i class="ri-check-line text-accent"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-secondary">
+                    نشر الثقافة السعودية
+                  </h4>
+                  <p class="text-gray-600">
+                    المساهمة في نشر الثقافة السعودية محليًا وعالميًا من خلال
+                    منصة رقمية متطورة.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-8 h-8 flex items-center justify-center bg-accent/10 rounded-full mt-1 ml-3"
+                >
+                  <i class="ri-check-line text-accent"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-bold text-secondary">دعم المبدعين</h4>
+                  <p class="text-gray-600">
+                    توفير منصة للمبدعين والمثقفين السعوديين لعرض إبداعاتهم
+                    والوصول إلى جمهور أوسع.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Audience Section -->
+    <section id="audience" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            الجمهور المستهدف
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            تستهدف منصة "آن" مجموعة متنوعة من المستخدمين المهتمين بالثقافة
+            والأدب السعودي
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Audience 1 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow audience-card"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-full mb-6 mx-auto"
+            >
+              <i class="ri-team-line text-secondary ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3 text-center">
+              النوادي الأدبية
+            </h3>
+            <p class="text-gray-600 text-center">
+              النوادي الأدبية والثقافية التي ترغب في توسيع نطاق وصولها وتوثيق
+              فعالياتها.
+            </p>
+          </div>
+          <!-- Audience 2 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow audience-card"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-full mb-6 mx-auto"
+            >
+              <i class="ri-building-4-line text-secondary ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3 text-center">
+              المؤسسات الثقافية
+            </h3>
+            <p class="text-gray-600 text-center">
+              المؤسسات والهيئات الثقافية التي تنظم فعاليات وأنشطة ثقافية وتسعى
+              لتوسيع جمهورها.
+            </p>
+          </div>
+          <!-- Audience 3 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow audience-card"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-full mb-6 mx-auto"
+            >
+              <i class="ri-graduation-cap-line text-secondary ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3 text-center">
+              الجامعات
+            </h3>
+            <p class="text-gray-600 text-center">
+              الجامعات والمؤسسات التعليمية التي تهتم بنشر المحاضرات والندوات
+              الثقافية والأدبية.
+            </p>
+          </div>
+          <!-- Audience 4 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow audience-card"
+          >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-secondary/10 rounded-full mb-6 mx-auto"
+            >
+              <i class="ri-user-line text-secondary ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold text-secondary mb-3 text-center">
+              الجمهور العام
+            </h3>
+            <p class="text-gray-600 text-center">
+              المهتمون بالثقافة والأدب السعودي من مختلف الفئات العمرية والخلفيات
+              الثقافية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- App Screenshots -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            لقطات من التطبيق
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            تصفح بعض لقطات الشاشة من تطبيق "آن" واكتشف واجهة المستخدم السهلة
+            والأنيقة
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8">
+          <div class="w-64 relative">
+            <div
+              class="absolute -top-3 -right-3 w-full h-full bg-accent/20 rounded-3xl transform -rotate-3"
+            ></div>
+            <img
+              src="https://readdy.ai/api/search-image?query=smartphone%2520mockup%2520showing%2520an%2520elegant%2520dark%2520UI%2520of%2520a%2520streaming%2520app%2520with%2520English%2520text%252C%2520featuring%2520red%2520and%2520navy%2520blue%2520accents%252C%2520showing%2520a%2520home%2520screen%2520with%2520featured%2520content%252C%2520navigation%2520labels%2520in%2520English%252C%2520high%2520quality%2520render&width=600&height=1200&seq=app2&orientation=portrait"
+              alt="الشاشة الرئيسية"
+              class="relative z-10 rounded-2xl border-4 border-white shadow-xl app-screenshot object-cover object-top w-full h-auto"
+            />
+          </div>
+          <div class="w-64 relative mt-12">
+            <div
+              class="absolute -top-3 -right-3 w-full h-full bg-secondary/20 rounded-3xl transform rotate-3"
+            ></div>
+            <img
+              src="https://readdy.ai/api/search-image?query=smartphone%2520mockup%2520showing%2520an%2520elegant%2520dark%2520UI%2520of%2520a%2520streaming%2520app%2520with%2520English%2520text%252C%2520featuring%2520red%2520and%2520navy%2520blue%2520accents%252C%2520showing%2520a%2520live%2520stream%2520view%2520with%2520comments%2520section%252C%2520all%2520interface%2520elements%2520in%2520English%252C%2520high%2520quality%2520render&width=600&height=1200&seq=app3&orientation=portrait"
+              alt="صفحة البث المباشر"
+              class="relative z-10 rounded-2xl border-4 border-white shadow-xl app-screenshot object-cover object-top w-full h-auto"
+            />
+          </div>
+          <div class="w-64 relative">
+            <div
+              class="absolute -top-3 -right-3 w-full h-full bg-accent/20 rounded-3xl transform -rotate-3"
+            ></div>
+            <img
+              src="https://readdy.ai/api/search-image?query=smartphone%2520mockup%2520showing%2520an%2520elegant%2520dark%2520UI%2520of%2520a%2520streaming%2520app%2520with%2520English%2520text%252C%2520featuring%2520red%2520and%2520navy%2520blue%2520accents%252C%2520showing%2520a%2520library%2520or%2520content%2520collection%2520view%252C%2520menu%2520items%2520and%2520buttons%2520in%2520English%252C%2520high%2520quality%2520render&width=600&height=1200&seq=app4&orientation=portrait"
+              alt="صفحة المكتبة"
+              class="relative z-10 rounded-2xl border-4 border-white shadow-xl app-screenshot object-cover object-top w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partners Section
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            شركاؤنا وداعمونا
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            نفخر بشراكتنا مع أبرز المؤسسات الثقافية في المملكة العربية السعودية
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+          <div
+            class="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow"
+          >
+            <img
+              src="https://readdy.ai/api/search-image?query=minimal%2520modern%2520cultural%2520institution%2520logo%2520design%252C%2520arabic%2520calligraphy%252C%2520black%2520and%2520white%252C%2520professional%2520corporate%2520identity%252C%2520clean%2520lines&width=200&height=100&seq=partner1&orientation=landscape"
+              alt="وزارة الثقافة"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+          <div
+            class="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow"
+          >
+            <img
+              src="https://readdy.ai/api/search-image?query=minimal%2520modern%2520literary%2520club%2520logo%2520design%252C%2520arabic%2520calligraphy%252C%2520black%2520and%2520white%252C%2520professional%2520corporate%2520identity%252C%2520clean%2520lines&width=200&height=100&seq=partner2&orientation=landscape"
+              alt="النادي الأدبي بالرياض"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+          <div
+            class="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow"
+          >
+            <img
+              src="https://readdy.ai/api/search-image?query=minimal%2520modern%2520university%2520logo%2520design%252C%2520arabic%2520calligraphy%252C%2520black%2520and%2520white%252C%2520professional%2520corporate%2520identity%252C%2520clean%2520lines&width=200&height=100&seq=partner3&orientation=landscape"
+              alt="جامعة الملك سعود"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+          <div
+            class="p-6 bg-white rounded-lg hover:shadow-lg transition-shadow"
+          >
+            <img
+              src="https://readdy.ai/api/search-image?query=minimal%2520modern%2520cultural%2520foundation%2520logo%2520design%252C%2520arabic%2520calligraphy%252C%2520black%2520and%2520white%252C%2520professional%2520corporate%2520identity%252C%2520clean%2520lines&width=200&height=100&seq=partner4&orientation=landscape"
+              alt="مؤسسة الملك عبدالعزيز"
+              class="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            ماذا يقول المستخدمون؟
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            آراء مستخدمينا وشركائنا في منصة آن
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-lg shadow-md relative">
+            <div
+              class="absolute -top-4 right-8 w-8 h-8 bg-accent text-white flex items-center justify-center rounded-full"
+            >
+              <i class="ri-double-quotes-r"></i>
+            </div>
+            <p class="text-gray-600 mb-6">
+              المنصة سهلت علينا الوصول لجمهور جديد خارج حدود المدينة! نستطيع
+              الآن مشاركة فعالياتنا مع المهتمين في جميع أنحاء المملكة.
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full ml-4"
+              >
+                <i class="ri-building-4-line text-secondary ri-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-secondary">النادي الأدبي بالرياض</h4>
+                <p class="text-sm text-gray-500">شريك ثقافي</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md relative">
+            <div
+              class="absolute -top-4 right-8 w-8 h-8 bg-accent text-white flex items-center justify-center rounded-full"
+            >
+              <i class="ri-double-quotes-r"></i>
+            </div>
+            <p class="text-gray-600 mb-6">
+              أصبح لدينا الآن أرشيف رقمي كامل لجميع فعالياتنا الثقافية. التوثيق
+              الرقمي المنظم ساعدنا في حفظ ونشر تراثنا الثقافي.
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full ml-4"
+              >
+                <i class="ri-graduation-cap-line text-secondary ri-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-secondary">جامعة الملك سعود</h4>
+                <p class="text-sm text-gray-500">مؤسسة تعليمية</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-md relative">
+            <div
+              class="absolute -top-4 right-8 w-8 h-8 bg-accent text-white flex items-center justify-center rounded-full"
+            >
+              <i class="ri-double-quotes-r"></i>
+            </div>
+            <p class="text-gray-600 mb-6">
+              منصة آن فتحت لنا آفاقاً جديدة للتواصل مع المهتمين بالثقافة. نستطيع
+              الآن مشاركة محتوانا الثقافي بشكل احترافي ومؤثر.
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full ml-4"
+              >
+                <i class="ri-team-line text-secondary ri-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-secondary">مؤسسة الملك عبدالعزيز</h4>
+                <p class="text-sm text-gray-500">مؤسسة ثقافية</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Revenue Model -->
+    <section id="revenue" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+            نموذج الإيرادات المستقبلي
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            تعتمد منصة "آن" على نموذج إيرادات متنوع لضمان استدامة المنصة
+            وتطويرها المستمر
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Revenue Model 1 -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-accent/10 rounded-full ml-4"
+              >
+                <i class="ri-advertisement-line text-accent ri-xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-secondary">الإعلانات</h3>
+            </div>
+            <p class="text-gray-600 mb-6">
+              توفير مساحات إعلانية للشركات والمؤسسات المهتمة بالوصول إلى جمهور
+              مهتم بالثقافة والأدب.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center bg-accent/10 rounded-full mt-0.5 ml-3"
+                >
+                  <i class="ri-check-line text-accent ri-sm"></i>
+                </div>
+                <span class="text-gray-700"
+                  >إعلانات قبل وأثناء البث المباشر</span
+                >
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center bg-accent/10 rounded-full mt-0.5 ml-3"
+                >
+                  <i class="ri-check-line text-accent ri-sm"></i>
+                </div>
+                <span class="text-gray-700">لافتات إعلانية داخل التطبيق</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center bg-accent/10 rounded-full mt-0.5 ml-3"
+                >
+                  <i class="ri-check-line text-accent ri-sm"></i>
+                </div>
+                <span class="text-gray-700"
+                  >محتوى مدعوم من الشركات الراعية</span
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Revenue Model 2 -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full ml-4"
+              >
+                <i class="ri-vip-crown-line text-secondary ri-xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-secondary">المحتوى المميز</h3>
+            </div>
+            <p class="text-gray-600 mb-6">
+              توفير محتوى حصري ومميز للمشتركين في الخدمة المدفوعة مع الحفاظ على
+              محتوى مجاني للجميع.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center bg-secondary/10 rounded-full mt-0.5 ml-3"
+                >
+                  <i class="ri-check-line text-secondary ri-sm"></i>
+                </div>
+                <span class="text-gray-700">محتوى حصري للمشتركين</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center bg-secondary/10 rounded-full mt-0.5 ml-3"
+                >
+                  <i class="ri-check-line text-secondary ri-sm"></i>
+                </div>
+                <span class="text-gray-700"
+                  >ميزات إضافية للمشتركين المميزين</span
+                >
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center bg-secondary/10 rounded-full mt-0.5 ml-3"
+                >
+                  <i class="ri-check-line text-secondary ri-sm"></i>
+                </div>
+                <span class="text-gray-700"
+                  >الوصول المبكر للفعاليات والمحتوى الجديد</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-20 bg-secondary text-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            انضم إلى منصة "آن" اليوم
+          </h2>
+          <p class="text-lg mb-8 opacity-90">
+            ندعو المؤسسات الثقافية والأدبية للانضمام إلى منصتنا والمساهمة في
+            إثراء المحتوى الثقافي السعودي
+          </p>
+          <div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+            <form id="join-form">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label
+                    for="organization-name"
+                    class="block text-sm font-medium mb-2 text-right"
+                    >اسم المؤسسة</label
+                  >
+                  <input
+                    type="text"
+                    id="organization-name"
+                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-button focus:outline-none focus:ring-2 focus:ring-accent custom-input text-right"
+                    placeholder="أدخل اسم المؤسسة"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="contact-email"
+                    class="block text-sm font-medium mb-2 text-right"
+                    >البريد الإلكتروني</label
+                  >
+                  <input
+                    type="email"
+                    id="contact-email"
+                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-button focus:outline-none focus:ring-2 focus:ring-accent custom-input text-right"
+                    placeholder="أدخل البريد الإلكتروني"
+                  />
+                </div>
+              </div>
+              <div class="mb-4">
+                <label
+                  for="organization-type"
+                  class="block text-sm font-medium mb-2 text-right"
+                  >نوع المؤسسة</label
+                >
+                <div class="relative">
+                  <select
+                    id="organization-type"
+                    class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-button focus:outline-none focus:ring-2 focus:ring-accent custom-input appearance-none text-right pr-8"
+                  >
+                    <option value="">اختر نوع المؤسسة</option>
+                    <option value="literary-club">نادي أدبي</option>
+                    <option value="cultural-org">مؤسسة ثقافية</option>
+                    <option value="university">جامعة</option>
+                    <option value="other">أخرى</option>
+                  </select>
+                  <div
+                    class="absolute left-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
+                  >
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block text-sm font-medium mb-2 text-right"
+                  >رسالة</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-button focus:outline-none focus:ring-2 focus:ring-accent custom-input text-right"
+                  placeholder="أخبرنا المزيد عن مؤسستك وكيف ترغب في الاستفادة من منصة آن"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-accent hover:bg-accent/90 text-white py-4 px-8 rounded-button font-medium transition-colors !rounded-button whitespace-nowrap text-xl shadow-lg shadow-accent/20 hover:shadow-accent/30"
+              >
+                إرسال الطلب
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="font-['Pacifico'] text-white text-3xl mb-4">logo</div>
+            <p class="text-gray-300 mb-4">
+              منصة البث المباشر الثقافية والأدبية السعودية
+            </p>
+            <div class="flex space-x-4 space-x-reverse">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-accent/20 transition-colors"
+              >
+                <i class="ri-twitter-x-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-accent/20 transition-colors"
+              >
+                <i class="ri-instagram-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-accent/20 transition-colors"
+              >
+                <i class="ri-linkedin-fill text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-accent/20 transition-colors"
+              >
+                <i class="ri-youtube-fill text-white"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">روابط سريعة</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >الصفحة الرئيسية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#features"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >الميزات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#benefits"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >الفوائد</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#audience"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >الجمهور المستهدف</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#revenue"
+                  class="text-gray-300 hover:text-accent transition-colors"
+                  >نموذج الإيرادات</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">تحميل التطبيق</h4>
+            <div class="space-y-3">
+              <a
+                href="#"
+                class="flex items-center bg-white/10 hover:bg-white/20 transition-colors px-4 py-2 rounded-button"
+              >
+                <div class="w-8 h-8 flex items-center justify-center ml-2">
+                  <i class="ri-apple-fill ri-lg"></i>
+                </div>
+                <div>
+                  <div class="text-xs">تحميل من</div>
+                  <div class="font-medium">App Store</div>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="flex items-center bg-white/10 hover:bg-white/20 transition-colors px-4 py-2 rounded-button"
+              >
+                <div class="w-8 h-8 flex items-center justify-center ml-2">
+                  <i class="ri-google-play-fill ri-lg"></i>
+                </div>
+                <div>
+                  <div class="text-xs">تحميل من</div>
+                  <div class="font-medium">Google Play</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">اشترك في النشرة الإخبارية</h4>
+            <p class="text-gray-300 mb-4">
+              احصل على آخر الأخبار والتحديثات حول منصة "آن"
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="البريد الإلكتروني"
+                class="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-r-button focus:outline-none focus:ring-2 focus:ring-accent text-right"
+              />
+              <button
+                type="submit"
+                class="bg-accent hover:bg-accent/90 px-4 py-2 rounded-l-button transition-colors !rounded-button whitespace-nowrap"
+              >
+                اشتراك
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2025 منصة آن. جميع الحقوق محفوظة.
+          </p>
+          <div class="flex space-x-6 space-x-reverse">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-accent text-sm transition-colors"
+              >سياسة الخصوصية</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-accent text-sm transition-colors"
+              >شروط الاستخدام</a
+            >
+            <a
+              href="#"
+              class="text-gray-400 hover:text-accent text-sm transition-colors"
+              >اتصل بنا</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="language-switch-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const langSwitch = document.getElementById("lang-switch");
+        const arElements = document.querySelectorAll(".lang-ar");
+        const enElements = document.querySelectorAll(".lang-en");
+        let currentLang = "ar";
+        function toggleLanguage() {
+          if (currentLang === "ar") {
+            document.documentElement.setAttribute("lang", "en");
+            document.documentElement.setAttribute("dir", "ltr");
+            arElements.forEach((el) => el.classList.add("hidden"));
+            enElements.forEach((el) => el.classList.remove("hidden"));
+            currentLang = "en";
+          } else {
+            document.documentElement.setAttribute("lang", "ar");
+            document.documentElement.setAttribute("dir", "rtl");
+            arElements.forEach((el) => el.classList.remove("hidden"));
+            enElements.forEach((el) => el.classList.add("hidden"));
+            currentLang = "ar";
+          }
+        }
+        langSwitch.addEventListener("click", toggleLanguage);
+      });
+    </script>
+    <script id="mobile-menu-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".ri-menu-line").parentElement;
+        const nav = document.querySelector("nav");
+        menuButton.addEventListener("click", function () {
+          if (nav.classList.contains("hidden")) {
+            nav.classList.remove("hidden");
+            nav.classList.add(
+              "flex",
+              "flex-col",
+              "absolute",
+              "top-16",
+              "right-0",
+              "left-0",
+              "bg-primary",
+              "p-4",
+              "space-y-4",
+              "shadow-lg",
+              "z-50",
+            );
+          } else {
+            nav.classList.add("hidden");
+            nav.classList.remove(
+              "flex",
+              "flex-col",
+              "absolute",
+              "top-16",
+              "right-0",
+              "left-0",
+              "bg-primary",
+              "p-4",
+              "space-y-4",
+              "shadow-lg",
+              "z-50",
+            );
+          }
+        });
+      });
+    </script>
+    <script id="form-submission-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const joinForm = document.getElementById("join-form");
+        if (joinForm) {
+          joinForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            // Get form values
+            const organizationName =
+              document.getElementById("organization-name").value;
+            const contactEmail = document.getElementById("contact-email").value;
+            const organizationType =
+              document.getElementById("organization-type").value;
+            const message = document.getElementById("message").value;
+            // Validate form
+            if (!organizationName || !contactEmail || !organizationType || !message) {
+              alert("يرجى ملء جميع الحقول المطلوبة");
+              return;
+            }
+            // Form submission logic would go here
+            alert("تم إرسال طلبك بنجاح! سنتواصل معك قريبًا.");
+            joinForm.reset();
+          });
+        }
+      });
+    </script>
+    <script id="smooth-scroll-script">
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+        for (const link of links) {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
+              // Close mobile menu if open
+              const nav = document.querySelector("nav");
+              if (nav.classList.contains("absolute")) {
+                nav.classList.add("hidden");
+                nav.classList.remove(
+                  "flex",
+                  "flex-col",
+                  "absolute",
+                  "top-16",
+                  "right-0",
+                  "left-0",
+                  "bg-primary",
+                  "p-4",
+                  "space-y-4",
+                  "shadow-lg",
+                  "z-50",
+                );
+              }
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+  <!-- Splash Screen -->
+<!-- Splash Screen -->
+<div id="splash" class="fixed inset-0 bg-black flex items-center justify-center z-50">
+    <img
+    src="assets/images/logo-aan.png.jpeg"
+    alt="شعار آن"
+    class="w-64 md:w-80 h-auto animate-splash-bounce"
+  />
+  
+</div>
+
+  
+  
+  
+</html>
