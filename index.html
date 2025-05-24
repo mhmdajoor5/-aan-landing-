@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        AOS.init({
+          duration: 1000,  // مدة الأنيميشن بالملي ثانية
+          once: true       // يتحرك مرة واحدة فقط
+        });
+      </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aan - منصة البث المباشر الثقافية والأدبية السعودية</title>
@@ -176,15 +183,18 @@
             >Target Audience</a
           >
           <a
-            href="#revenue"
-            class="text-white hover:text-accent transition-colors lang-ar"
-            >نموذج الإيرادات</a
-          >
-          <a
-            href="#revenue"
-            class="text-white hover:text-accent transition-colors lang-en hidden"
-            >Revenue Model</a
-          >
+          href="#vision"
+          class="text-white hover:text-accent transition-colors lang-ar"
+        >
+          رؤيتنا ورسالتنا
+        </a>        
+        <a
+        href="#vision"
+        class="text-white hover:text-accent transition-colors lang-en hidden"
+      >
+        Vision & Mission
+      </a>
+      
         </nav>
         <div class="flex items-center gap-4">
           <!-- <button
@@ -274,7 +284,7 @@
                 class="absolute -top-4 -right-4 w-full h-full bg-secondary rounded-3xl transform rotate-6"
               ></div>
               <img
-                src="https://readdy.ai/api/search-image?query=smartphone%2520mockup%2520showing%2520an%2520elegant%2520dark%2520UI%2520of%2520a%2520streaming%2520app%2520with%2520English%2520text%252C%2520featuring%2520red%2520and%2520navy%2520blue%2520accents%252C%2520showing%2520a%2520cultural%2520event%2520stream%2520interface%2520with%2520English%2520labels%2520and%2520buttons%252C%2520high%2520quality%2520render%252C%2520professional%2520product%2520photography&width=600&height=1200&seq=app1&orientation=portrait"
+                src="assets/images/tttest.png"
                 alt="تطبيق آن"
                 class="relative z-10 rounded-2xl border-4 border-white shadow-xl app-screenshot object-cover object-top w-full h-auto"
               />
@@ -372,7 +382,7 @@
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row items-center">
           <div class="md:w-1/2 mb-10 md:mb-0">
-            <img aaaan.jpg
+            <img 
               src="assets/images/aaaan.jpg"
               alt="الحفاظ على التراث الثقافي السعودي"
               class="rounded-lg shadow-xl object-cover object-top w-full h-auto"
@@ -540,18 +550,18 @@
               class="absolute -top-3 -right-3 w-full h-full bg-accent/20 rounded-3xl transform -rotate-3"
             ></div>
             <img
-              src="https://readdy.ai/api/search-image?query=smartphone%2520mockup%2520showing%2520an%2520elegant%2520dark%2520UI%2520of%2520a%2520streaming%2520app%2520with%2520English%2520text%252C%2520featuring%2520red%2520and%2520navy%2520blue%2520accents%252C%2520showing%2520a%2520home%2520screen%2520with%2520featured%2520content%252C%2520navigation%2520labels%2520in%2520English%252C%2520high%2520quality%2520render&width=600&height=1200&seq=app2&orientation=portrait"
+              src="assets/images/home.jpeg"
               alt="الشاشة الرئيسية"
               class="relative z-10 rounded-2xl border-4 border-white shadow-xl app-screenshot object-cover object-top w-full h-auto"
             />
           </div>
-          <div class="w-64 relative mt-12">
+          <!-- <div class="w-64 relative mt-12">
             <div
               class="absolute -top-3 -right-3 w-full h-full bg-secondary/20 rounded-3xl transform rotate-3"
-            ></div>
-            <img
-              src="https://readdy.ai/api/search-image?query=smartphone%2520mockup%2520showing%2520an%2520elegant%2520dark%2520UI%2520of%2520a%2520streaming%2520app%2520with%2520English%2520text%252C%2520featuring%2520red%2520and%2520navy%2520blue%2520accents%252C%2520showing%2520a%2520live%2520stream%2520view%2520with%2520comments%2520section%252C%2520all%2520interface%2520elements%2520in%2520English%252C%2520high%2520quality%2520render&width=600&height=1200&seq=app3&orientation=portrait"
-              alt="صفحة البث المباشر"
+            ></div> -->
+            <!-- <img
+            src="assets/images/home.jpeg"
+            alt="صفحة البث المباشر"
               class="relative z-10 rounded-2xl border-4 border-white shadow-xl app-screenshot object-cover object-top w-full h-auto"
             />
           </div>
@@ -560,9 +570,9 @@
               class="absolute -top-3 -right-3 w-full h-full bg-accent/20 rounded-3xl transform -rotate-3"
             ></div>
             <img
-              src="https://readdy.ai/api/search-image?query=smartphone%2520mockup%2520showing%2520an%2520elegant%2520dark%2520UI%2520of%2520a%2520streaming%2520app%2520with%2520English%2520text%252C%2520featuring%2520red%2520and%2520navy%2520blue%2520accents%252C%2520showing%2520a%2520library%2520or%2520content%2520collection%2520view%252C%2520menu%2520items%2520and%2520buttons%2520in%2520English%252C%2520high%2520quality%2520render&width=600&height=1200&seq=app4&orientation=portrait"
+              src="assets/images/home.jpeg"
               alt="صفحة المكتبة"
-              class="relative z-10 rounded-2xl border-4 border-white shadow-xl app-screenshot object-cover object-top w-full h-auto"
+              class="relative z-10 rounded-2xl border-4 border-white shadow-xl app-screenshot object-cover object-top w-full h-auto" -->
             />
           </div>
         </div>
@@ -619,193 +629,118 @@
         </div>
       </div>
     </section> -->
-    <!-- Testimonials Section -->
-    <section class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
-            ماذا يقول المستخدمون؟
-          </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            آراء مستخدمينا وشركائنا في منصة آن
+  <!-- Partners Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+          شركاؤنا
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          نفخر بشراكتنا مع أبرز الجهات الثقافية في المملكة العربية السعودية
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Partner 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="ri-team-line text-secondary text-4xl mb-4"></i>
+          <h3 class="text-xl font-bold text-secondary mb-2">
+            الجماعات السعودية
+          </h3>
+          <p class="text-gray-600">
+            جماعات ثقافية مهتمة بالنشر الأدبي وتعزيز الهوية الثقافية السعودية.
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-white p-8 rounded-lg shadow-md relative">
-            <div
-              class="absolute -top-4 right-8 w-8 h-8 bg-accent text-white flex items-center justify-center rounded-full"
-            >
-              <i class="ri-double-quotes-r"></i>
-            </div>
-            <p class="text-gray-600 mb-6">
-              المنصة سهلت علينا الوصول لجمهور جديد خارج حدود المدينة! نستطيع
-              الآن مشاركة فعالياتنا مع المهتمين في جميع أنحاء المملكة.
-            </p>
-            <div class="flex items-center">
-              <div
-                class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full ml-4"
-              >
-                <i class="ri-building-4-line text-secondary ri-lg"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-secondary">النادي الأدبي بالرياض</h4>
-                <p class="text-sm text-gray-500">شريك ثقافي</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white p-8 rounded-lg shadow-md relative">
-            <div
-              class="absolute -top-4 right-8 w-8 h-8 bg-accent text-white flex items-center justify-center rounded-full"
-            >
-              <i class="ri-double-quotes-r"></i>
-            </div>
-            <p class="text-gray-600 mb-6">
-              أصبح لدينا الآن أرشيف رقمي كامل لجميع فعالياتنا الثقافية. التوثيق
-              الرقمي المنظم ساعدنا في حفظ ونشر تراثنا الثقافي.
-            </p>
-            <div class="flex items-center">
-              <div
-                class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full ml-4"
-              >
-                <i class="ri-graduation-cap-line text-secondary ri-lg"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-secondary">جامعة الملك سعود</h4>
-                <p class="text-sm text-gray-500">مؤسسة تعليمية</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg-white p-8 rounded-lg shadow-md relative">
-            <div
-              class="absolute -top-4 right-8 w-8 h-8 bg-accent text-white flex items-center justify-center rounded-full"
-            >
-              <i class="ri-double-quotes-r"></i>
-            </div>
-            <p class="text-gray-600 mb-6">
-              منصة آن فتحت لنا آفاقاً جديدة للتواصل مع المهتمين بالثقافة. نستطيع
-              الآن مشاركة محتوانا الثقافي بشكل احترافي ومؤثر.
-            </p>
-            <div class="flex items-center">
-              <div
-                class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full ml-4"
-              >
-                <i class="ri-team-line text-secondary ri-lg"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-secondary">مؤسسة الملك عبدالعزيز</h4>
-                <p class="text-sm text-gray-500">مؤسسة ثقافية</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Revenue Model -->
-    <section id="revenue" class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
-            نموذج الإيرادات المستقبلي
-          </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            تعتمد منصة "آن" على نموذج إيرادات متنوع لضمان استدامة المنصة
-            وتطويرها المستمر
+        <!-- Partner 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="ri-building-4-line text-secondary text-4xl mb-4"></i>
+          <h3 class="text-xl font-bold text-secondary mb-2">
+            الأندية الأدبية
+          </h3>
+          <p class="text-gray-600">
+            الأندية التي تسعى لنشر الأدب وتنظيم الفعاليات والملتقيات الفكرية.
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Revenue Model 1 -->
-          <div class="bg-white p-8 rounded-lg shadow-md">
-            <div class="flex items-center mb-6">
-              <div
-                class="w-12 h-12 flex items-center justify-center bg-accent/10 rounded-full ml-4"
-              >
-                <i class="ri-advertisement-line text-accent ri-xl"></i>
-              </div>
-              <h3 class="text-2xl font-bold text-secondary">الإعلانات</h3>
-            </div>
-            <p class="text-gray-600 mb-6">
-              توفير مساحات إعلانية للشركات والمؤسسات المهتمة بالوصول إلى جمهور
-              مهتم بالثقافة والأدب.
-            </p>
-            <ul class="space-y-3">
-              <li class="flex items-start">
-                <div
-                  class="w-6 h-6 flex items-center justify-center bg-accent/10 rounded-full mt-0.5 ml-3"
-                >
-                  <i class="ri-check-line text-accent ri-sm"></i>
-                </div>
-                <span class="text-gray-700"
-                  >إعلانات قبل وأثناء البث المباشر</span
-                >
-              </li>
-              <li class="flex items-start">
-                <div
-                  class="w-6 h-6 flex items-center justify-center bg-accent/10 rounded-full mt-0.5 ml-3"
-                >
-                  <i class="ri-check-line text-accent ri-sm"></i>
-                </div>
-                <span class="text-gray-700">لافتات إعلانية داخل التطبيق</span>
-              </li>
-              <li class="flex items-start">
-                <div
-                  class="w-6 h-6 flex items-center justify-center bg-accent/10 rounded-full mt-0.5 ml-3"
-                >
-                  <i class="ri-check-line text-accent ri-sm"></i>
-                </div>
-                <span class="text-gray-700"
-                  >محتوى مدعوم من الشركات الراعية</span
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- Revenue Model 2 -->
-          <div class="bg-white p-8 rounded-lg shadow-md">
-            <div class="flex items-center mb-6">
-              <div
-                class="w-12 h-12 flex items-center justify-center bg-secondary/10 rounded-full ml-4"
-              >
-                <i class="ri-vip-crown-line text-secondary ri-xl"></i>
-              </div>
-              <h3 class="text-2xl font-bold text-secondary">المحتوى المميز</h3>
-            </div>
-            <p class="text-gray-600 mb-6">
-              توفير محتوى حصري ومميز للمشتركين في الخدمة المدفوعة مع الحفاظ على
-              محتوى مجاني للجميع.
-            </p>
-            <ul class="space-y-3">
-              <li class="flex items-start">
-                <div
-                  class="w-6 h-6 flex items-center justify-center bg-secondary/10 rounded-full mt-0.5 ml-3"
-                >
-                  <i class="ri-check-line text-secondary ri-sm"></i>
-                </div>
-                <span class="text-gray-700">محتوى حصري للمشتركين</span>
-              </li>
-              <li class="flex items-start">
-                <div
-                  class="w-6 h-6 flex items-center justify-center bg-secondary/10 rounded-full mt-0.5 ml-3"
-                >
-                  <i class="ri-check-line text-secondary ri-sm"></i>
-                </div>
-                <span class="text-gray-700"
-                  >ميزات إضافية للمشتركين المميزين</span
-                >
-              </li>
-              <li class="flex items-start">
-                <div
-                  class="w-6 h-6 flex items-center justify-center bg-secondary/10 rounded-full mt-0.5 ml-3"
-                >
-                  <i class="ri-check-line text-secondary ri-sm"></i>
-                </div>
-                <span class="text-gray-700"
-                  >الوصول المبكر للفعاليات والمحتوى الجديد</span
-                >
-              </li>
-            </ul>
-          </div>
+        <!-- Partner 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="ri-community-line text-secondary text-4xl mb-4"></i>
+          <h3 class="text-xl font-bold text-secondary mb-2">
+            الجمعيات الثقافية المتخصصة
+          </h3>
+          <p class="text-gray-600">
+            جمعيات تهتم بمجالات ثقافية محددة مثل المسرح، الشعر، أو التراث.
+          </p>
+        </div>
+        <!-- Partner 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="ri-bank-line text-secondary text-4xl mb-4"></i>
+          <h3 class="text-xl font-bold text-secondary mb-2">
+            مؤسسات الثقافة والفنون
+          </h3>
+          <p class="text-gray-600">
+            مؤسسات رسمية وخاصة تدعم وتدير الأنشطة الثقافية والفنية.
+          </p>
+        </div>
+        <!-- Partner 5 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="ri-book-mark-line text-secondary text-4xl mb-4"></i>
+          <h3 class="text-xl font-bold text-secondary mb-2">
+            الجمعيات العامة للفنون
+          </h3>
+          <p class="text-gray-600">
+            منظمات تهتم بالفنون البصرية، والموسيقى، والتمثيل وغيرها من الفنون.
+          </p>
+        </div>
+        <!-- Partner 6 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <i class="ri-user-heart-line text-secondary text-4xl mb-4"></i>
+          <h3 class="text-xl font-bold text-secondary mb-2">
+            الشريك الأدبي
+          </h3>
+          <p class="text-gray-600">
+            شركاؤنا من الأفراد أو الكيانات التي تؤمن برسالة الأدب والثقافة وتسهم في نشرها.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  
+<!-- Vision & Mission Section -->
+<section id="vision" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+          رؤيتنا ورسالتنا
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          نؤمن أن الثقافة والأدب هما مرآة المجتمع، ومن خلال منصة "آن" نعمل على ربط المهتمين والمبدعين عبر تجربة رقمية متقدمة تعزز الحضور الثقافي السعودي.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Vision -->
+        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <i class="ri-eye-line text-accent text-3xl ml-3"></i>
+            <h3 class="text-2xl font-bold text-secondary">رؤيتنا</h3>
+          </div>
+          <p class="text-gray-600 text-lg leading-relaxed">
+            أن نكون المنصة الرائدة في العالم العربي للبث المباشر الثقافي، التي تحتضن الإبداع وتوثق التراث وتُلهِم الأجيال القادمة.
+          </p>
+        </div>
+        <!-- Mission -->
+        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <i class="ri-heart-pulse-line text-accent text-3xl ml-3"></i>
+            <h3 class="text-2xl font-bold text-secondary">رسالتنا</h3>
+          </div>
+          <p class="text-gray-600 text-lg leading-relaxed">
+            تقديم تجربة ثقافية رقمية مبتكرة وآمنة، تُمكّن المؤسسات والأفراد من مشاركة الفعاليات والمحتوى الأدبي بطريقة احترافية ومؤثرة.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
     <!-- CTA Section -->
     <section class="py-20 bg-secondary text-white">
       <div class="container mx-auto px-4">
@@ -964,10 +899,11 @@
               </li>
               <li>
                 <a
-                  href="#revenue"
-                  class="text-gray-300 hover:text-accent transition-colors"
-                  >نموذج الإيرادات</a
-                >
+                href="#vision"
+                class="text-white hover:text-accent transition-colors lang-ar"
+              >
+                رؤيتنا ورسالتنا
+              </a>              
               </li>
             </ul>
           </div>
